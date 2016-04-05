@@ -171,6 +171,13 @@
 		a:hover {
 			color: #ff7496;
 		}
+		a.project_link {
+			border-bottom: 1px dashed #999;
+		}
+		a.project_link:hover {
+			border-bottom: 1px dashed #ff7496;
+		}
+		
 
 	strong, b {
 		color: #313f47;
