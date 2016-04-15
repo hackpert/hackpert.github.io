@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Projects - IndoWrite</title>
+		<title>Projects - EarlyDetect</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/gallery.prefixed.css">
 		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -45,10 +46,35 @@
 					<div id="main">
 						<div class="inner">
 							<!--<h1>IndoWrite</h1>-->
-							<span class="image main"><img src="images/indowrite.jpg" alt="" /></span>
-							<p> Conventional handwriting recognition techniques like using a sliding window algorithm with a LeNet do not work efficiently on Devanagri (the script in which many Asian languages including Hindi, Bengali, Nepali, Marathi etc. are written) because of the similarities in alphabets like <i>\ka </i> (क) and <i>\pha</i> (फ). I implemented a software in Torch that first uses computer vision to determine the size of one line of text, and then uses a sliding window algorithm with a ResNet-152, trained on a self-generated dataset, that can recognise Hindi and Bengali characters with an accuracy of over 94%. <br> The software can therefore interpret entire pages of handwritten text in Devanagri and convert to UTF-8 characters with an unmatched accuracy </p> 
-						</div>
-						<center><img src="images/indowritedemo.jpg" style="width: 50%;"/></center>
+							<span class="image main"><img src="images/vqa.jpg" alt="" /></span>
+							<p>
+								More than 60% of all deaths that occur due to cancer are caused by late diagnosis. To facilitate early diagnosis of cancer, EarlyDetect uses convolutional neural networks on images (and simple pathological data in some cases) to predict the possibility of a tumor being malignant. It can currently classify Melanoma, Squamous Cell Carcinoma, Basal Cell Carcinoma, Lymphoma, Retinoblastoma, Breast Cancer and Glioma (using EEG data) with an average accuracy of over 95%. This makes the tool more accurate than human doctors. <br/>
+								EarlyDetect technology is being incoporated in a startup that is about to close seed funding, to make it accessible to the end-user.
+								<br/></br>
+								For more details see: <a href="https://www.googlesciencefair.com/projects/en/2015/b6b8ebf04c1197e642b6185ef41256fbb5e813d62ada719aad459d661196e199"><u> Google Science Fair Submission</u> </a> and <a href="#"><u>Research Paper</u></a>
+							</p>
+
+							<div class="gallery autoplay items-5">
+								    <div id="item-1" class="control-operator"></div>
+									<div id="item-2" class="control-operator"></div>
+									<div id="item-3" class="control-operator"></div>
+									<div id="item-4" class="control-operator"></div>
+									<div id="item-5" class="control-operator"></div>
+									<figure class="item"> <img src="images/edss1.png"/> </figure>
+									<figure class="item"> <img src="images/edss2.png"/></figure>
+									<figure class="item"> <img src="images/edss3.png"/> </figure>
+									<figure class="item"> <img src="images/edss4.png"/></figure>
+									<figure class="item"> <img src="images/edss5.png" style="width: 30em; top:100px"/></figure>
+
+									<div class="controls">
+								    	<a href="#item-1" class="control-button">•</a>
+								    	<a href="#item-2" class="control-button">•</a>
+									<a href="#item-3" class="control-button">•</a>
+								    	<a href="#item-4" class="control-button">•</a>
+								    	<a href="#item-5" class="control-button">•</a>
+								    </div>
+							</div>
+
 					</div>
 
 				<!-- Footer -->
