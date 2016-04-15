@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Projects - IndoWrite</title>
+		<title>Projects - PyDoku</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />i
+		<link rel="stylesheet" href="../assets/css/gallery.prefixed.css">
 		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -44,11 +45,30 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>SumUp</h1>
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<p> Conventional handwriting recognition techniques like using a sliding window algorithm with a LeNet do not work efficiently on Devanagri (the script in which many Asian languages including Hindi, Bengali, Nepali, Marathi etc. are written) because of the similarities in alphabets like \ka and \pha. I implemented a software in Torch that first uses computer vision to determine the size of one line of text, and then uses a sliding window algorithm with a ResNet-152, trained on a self-generated dataset, that can recognise Hindi and Bengali characters with an accuracy of over 94%. <br> The software can therefore interpret entire pages of handwritten text in Devanagri and convert to UTF-8 characters with an unmatched accuracy </p> 
-						</div>
+							<!--<h1>IndoWrite</h1>-->
+							<span class="image main"><img src="images/pydoku.jpg" alt="" /></span>
+							<p>
+								Sudoku puzzles have become a fascination in the past few years. PyDoku is a computer vision based program that uses OpenCV to recognise and interpret sudoku puzzles in printed format, digitises them, and can also solve them. It detects the grid in an image, flattens it out, and recognises and fills the numbers using Optical Character Recognition. The puzzle is then solved using a simple search algorithm. 	
+							</p>	
+							<div class="gallery autoplay items-4">
+									<div id="item-1" class="control-operator"></div>
+									<div id="item-2" class="control-operator"></div>
+									<div id="item-3" class="control-operator"></div>
+									<div id="item-4" class="control-operator"></div>
+									<figure class="item" style="height: 400px;"><span class="helper"></span> <img src="images/pydoku.png"/> </figure>
+									<figure class="item" style="height: 400px;"><span class="helper"></span> <img src="images/pydoku1.png"/></figure>
+									<figure class="item" style="height: 400px;"><span class="helper"></span> <img src="images/pydoku2.png"/> </figure>
+									<figure class="item" style="height: 400px;"><span class="helper"></span> <img src="images/pydoku3.png"/></figure>
+							
+									<div class="controls">
+										<a href="#item-1" class="control-button">•</a>
+										<a href="#item-2" class="control-button">•</a>
+										<a href="#item-3" class="control-button">•</a>
+										<a href="#item-4" class="control-button">•</a>
+									</div>
+							</div>
 					</div>
+				</div>
 
 				<!-- Footer -->
 					<footer id="footer">
